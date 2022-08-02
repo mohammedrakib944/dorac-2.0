@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply scroll-smooth bg-[#030303];
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+  li {
+    @apply cursor-pointer;
+  }
+  .in-wrapper {
+    @apply container mx-auto 2xl:px-16;
+  }
+}
+@layer components {
+  .c-button {
+    @apply cursor-pointer rounded-full text-slate-600 shadow-lg p-3 border border-slate-200/50 dark:text-sky-200 hover:shadow-none duration-300 hover:scale-105 hover:text-sky-500 dark:hover:text-sky-500;
+  }
+}
