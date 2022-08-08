@@ -29,6 +29,15 @@
   }
 }
 @layer components {
+  .wrapper {
+    @apply container mx-auto py-8 xl:py-32 px-6 2xl:px-16;
+  }
+  .title {
+    @apply text-cyan-500 font-bold uppercase;
+  }
+  .para {
+    @apply text-gray-300 tracking-wider;
+  }
   .c-button {
     @apply cursor-pointer rounded-full text-slate-600 shadow-lg p-3 border border-slate-200/50 dark:text-sky-200 hover:shadow-none duration-300 hover:scale-105 hover:text-sky-500 dark:hover:text-sky-500;
   }

@@ -4,6 +4,7 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsPersonLinesFill, BsMoonStars, BsSun } from "react-icons/bs";
 
 import logo from "../assets/logo.png";
+import { NavLinks } from "./Navlinks";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -19,39 +20,6 @@ const Navbar = () => {
     });
   }, []);
 
-  const NavLinks = [
-    {
-      id: 1,
-      text: "Home",
-      url: "/",
-    },
-    {
-      id: 2,
-      text: "About The Game",
-      url: "/#about",
-    },
-    {
-      id: 3,
-      text: "Decentralised Economy",
-      url: "/#skills",
-    },
-    {
-      id: 4,
-      text: "Roadmap",
-      url: "/#projects",
-    },
-    {
-      id: 5,
-      text: "The Team members",
-      url: "/#contact",
-    },
-    {
-      id: 5,
-      text: "Partners",
-      url: "/#partners",
-    },
-  ];
-
   return (
     <div
       className={
@@ -62,11 +30,13 @@ const Navbar = () => {
     >
       <div className=" container mx-auto flex w-full h-full justify-between items-center px-2 2xl:px-16">
         <div>
-          <img
-            src={logo}
-            className={shadow ? "w-[50px]" : "w-[60px] md:w-[70px]"}
-            alt=""
-          />
+          <a href="/#">
+            <img
+              src={logo}
+              className={shadow ? "w-[50px]" : "w-[60px] md:w-[70px]"}
+              alt=""
+            />
+          </a>
         </div>
 
         <div className="flex items-center justify-center">
