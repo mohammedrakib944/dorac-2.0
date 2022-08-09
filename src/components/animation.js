@@ -15,7 +15,7 @@ export const FromRight = {
   },
 };
 export const FromRightNormal = {
-  offscreen: { opacity: 0, x: 400 },
+  offscreen: { opacity: 0, x: 100 },
   onscreen: {
     opacity: 1,
     x: 0,
@@ -23,7 +23,7 @@ export const FromRightNormal = {
   },
 };
 export const FromLeftNormal = {
-  offscreen: { opacity: 0, x: -400 },
+  offscreen: { opacity: 0, x: -100 },
   onscreen: {
     opacity: 1,
     x: 0,
@@ -47,7 +47,7 @@ export const FromTop = {
   },
 };
 export const PopUp = {
-  offscreen: { scale: 0 },
+  offscreen: { scale: 0.5 },
   onscreen: {
     scale: 1,
     transition: { type: "spring", bounce: 0.4, duration: 1.2 },

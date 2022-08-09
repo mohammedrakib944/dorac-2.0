@@ -34,7 +34,7 @@ const Carusol = () => {
     >
       {/* <div className="container w-full h-[2px] bg-gradient-to-r from-transparent via-violet-500 to-transparent mx-auto"></div> */}
       <div className="wrapper" id="economy">
-        <h2 className="title w-full text-center pt-12 pb-4 md:pb-0">
+        <h2 className="title w-full text-center pt-12 pb-6">
           Decentralised Economy
         </h2>
 
