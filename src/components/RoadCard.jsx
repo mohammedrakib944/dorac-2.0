@@ -12,11 +12,13 @@ const RoadCard = ({ data }) => {
       </div>
       <div className="w-[20px] md:w-[60px] h-[2px] bg-violet-500"></div>
       <fieldset className="border border-violet-500 py-3 px-6 max-w-[480px] md:min-w-[360px]">
-        <legend className="font-bold px-2 text-xl">Phase {id}</legend>
+        <legend className="font-bold px-2 text-xl xl:text-2xl">
+          Phase {id}
+        </legend>
         <ul>
           {text.map((val, index) => (
             <li
-              className="flex items-center py-[2px] text-gray-200"
+              className="flex items-center py-2 xl:py-[10px] text-gray-200 xl:text-xl"
               key={index}
             >
               <span className="text-violet-500 pr-4">

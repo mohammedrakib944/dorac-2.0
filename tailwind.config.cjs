@@ -1,7 +1,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        play: ["Play", "sans-serif"],
+      },
+    },
   },
   plugins: [require("tailwind-scrollbar-hide")],
 };

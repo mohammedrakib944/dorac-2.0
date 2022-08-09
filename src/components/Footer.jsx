@@ -2,10 +2,21 @@ import React from "react";
 import Logo from "../assets/logo.png";
 import { NavLinks } from "./Navlinks";
 
+import { motion } from "framer-motion";
+import { Rotate } from "./animation";
+
 const Footer = () => {
   return (
-    <div className="w-full bg-violet-800 py-12">
-      <img src={Logo} className="mx-auto" alt="" />
+    <motion.div
+      className="w-full bg-violet-800 py-12 overflow-hidden"
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      transition={{ staggerChildren: 0.2 }}
+      viewport={{ once: false, amount: 0.5 }}
+    >
+      <motion.div variants={Rotate}>
+        <img src={Logo} className="mx-auto" alt="" />
+      </motion.div>
       <ul className="max-w-[1080px] text-center mx-auto mt-6 md:flex md:gap-x-3 lg:gap-x-6 items-center justify-center">
         {NavLinks.map((data) => (
           <a href={data.url} key={data.id}>
@@ -15,7 +26,7 @@ const Footer = () => {
           </a>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 

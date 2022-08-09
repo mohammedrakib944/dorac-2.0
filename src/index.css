@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +7,7 @@
 @layer base {
   html,
   body {
-    @apply scroll-smooth bg-[#030303];
+    @apply scroll-smooth bg-[#030303] font-play;
   }
   h1,
   h2,
@@ -13,7 +15,7 @@
   h4,
   h5,
   h6 {
-    @apply font-bold;
+    @apply font-bold font-play;
   }
   h1 {
     @apply text-4xl sm:text-5xl md:text-6xl;
@@ -36,7 +38,7 @@
     @apply text-cyan-500 font-bold uppercase;
   }
   .para {
-    @apply text-gray-300 tracking-wider;
+    @apply text-gray-300 tracking-wider text-lg;
   }
   .c-button {
     @apply cursor-pointer rounded-full text-slate-600 shadow-lg p-3 border border-slate-200/50 dark:text-sky-200 hover:shadow-none duration-300 hover:scale-105 hover:text-sky-500 dark:hover:text-sky-500;

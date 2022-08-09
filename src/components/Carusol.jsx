@@ -8,6 +8,9 @@ import CarusolCard from "./CarusolCard";
 import AboutBG from "../assets/bg-2.png";
 import { Data } from "./Data.js";
 
+import { motion } from "framer-motion";
+import { FromLeftNormal, PopUp } from "./animation";
+
 const Carusol = () => {
   const [item, setItem] = useState(1);
   const [Send, setSend] = useState({});
@@ -22,16 +25,22 @@ const Carusol = () => {
   }, [item]);
 
   return (
-    <div style={{ backgroundImage: `url(${AboutBG})` }}>
+    <motion.div
+      style={{ backgroundImage: `url(${AboutBG})` }}
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      transition={{ staggerChildren: 0.2 }}
+      viewport={{ once: false, amount: 0.5 }}
+    >
       {/* <div className="container w-full h-[2px] bg-gradient-to-r from-transparent via-violet-500 to-transparent mx-auto"></div> */}
       <div className="wrapper" id="economy">
         <h2 className="title w-full text-center pt-12 pb-4 md:pb-0">
           Decentralised Economy
         </h2>
 
-        <div>
+        <motion.div variants={PopUp}>
           <CarusolCard data={Send} />
-        </div>
+        </motion.div>
         <div className="text-white w-full text-center pt-4 md:pt-0">
           <button
             disabled={item === 1}
@@ -49,7 +58,7 @@ const Carusol = () => {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -3,7 +3,7 @@ import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsPersonLinesFill, BsMoonStars, BsSun } from "react-icons/bs";
 
-import logo from "../assets/logo.png";
+import logo from "../assets/home-logo.png";
 import { NavLinks } from "./Navlinks";
 
 const Navbar = () => {
@@ -24,7 +24,7 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed w-full h-[60px] duration-300 z-[100] shadow-lg bg-[#161516] backdrop-blur-xl"
+          ? "fixed w-full h-[60px] duration-300 z-[100] shadow-lg bg-[#130f14] backdrop-blur-xl"
           : "fixed w-full h-[90px] duration-300 z-[100]"
       }
     >
@@ -43,7 +43,7 @@ const Navbar = () => {
           <ul className="hidden md:flex md:gap-x-3 lg:gap-x-6">
             {NavLinks.map((data) => (
               <a href={data.url} key={data.id}>
-                <li className="c-link text-md text-gray-200 hover:text-sky-400 duration-300">
+                <li className="c-link text-md text-gray-200 hover:text-sky-400 hover:border-b duration-300">
                   {data.text}
                 </li>
               </a>

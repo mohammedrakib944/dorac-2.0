@@ -1,31 +1,81 @@
 import React from "react";
-import P1 from "../assets/p1.png";
-import P2 from "../assets/p2.png";
-import P3 from "../assets/p3.png";
-import P4 from "../assets/p4.png";
+import P1 from "../assets/clients/sp1.png";
+import P2 from "../assets/clients/sp2.png";
+import P3 from "../assets/clients/sp3.png";
+import P4 from "../assets/clients/sp4.png";
+import P5 from "../assets/clients/sp5.png";
+import P6 from "../assets/clients/sp6.png";
+import P7 from "../assets/clients/sp7.png";
+import P8 from "../assets/clients/sp8.png";
+import P9 from "../assets/clients/sp9.png";
+import P10 from "../assets/clients/sp10.png";
+import P11 from "../assets/clients/sp11.png";
+import P12 from "../assets/clients/sp12.png";
+import P13 from "../assets/clients/sp13.png";
+import P14 from "../assets/clients/sp14.png";
+
+import { motion } from "framer-motion";
+import { PopUp } from "./animation";
 
 const Partners = () => {
   return (
-    <div className="py-[30px] border-t-2 border-violet-600/50">
+    <motion.div
+      className="py-[30px] border-t-2 border-violet-600/50"
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      transition={{ staggerChildren: 0.2 }}
+      viewport={{ once: false, amount: 0.5 }}
+    >
       <h2 className="title w-full text-center mt-12">Partners</h2>
-      <div
-        className="max-w-[1080px] mx-auto py-[80px] grid md:grid-cols-3 xl:grid-cols-4 gap-10"
+      <motion.div
+        variants={PopUp}
+        className="max-w-[1080px] mx-auto grid grid-cols-3 px-4 md:grid-cols-7 gap-12 my-20"
         id="partners"
       >
         <a href="#" className="flex justify-center">
-          <img src={P1} alt="" />
+          <img src={P1} className="w-[60px] " alt="" />
         </a>
         <a href="#" className="flex justify-center">
-          <img src={P2} alt="" />
+          <img src={P2} className="w-[60px] " alt="" />
         </a>
         <a href="#" className="flex justify-center">
-          <img src={P3} alt="" />
+          <img src={P3} className="w-[60px] " alt="" />
         </a>
         <a href="#" className="flex justify-center">
-          <img src={P4} alt="" />
+          <img src={P4} className="w-[60px] " alt="" />
         </a>
-      </div>
-    </div>
+        <a href="#" className="flex justify-center">
+          <img src={P5} className="w-[60px] " alt="" />
+        </a>
+        <a href="#" className="flex justify-center">
+          <img src={P6} className="w-[60px] " alt="" />
+        </a>
+        <a href="#" className="flex justify-center">
+          <img src={P7} className="w-[60px] " alt="" />
+        </a>
+        <a href="#" className="flex justify-center">
+          <img src={P8} className="w-[60px] " alt="" />
+        </a>
+        <a href="#" className="flex justify-center">
+          <img src={P9} className="w-[60px] " alt="" />
+        </a>
+        <a href="#" className="flex justify-center">
+          <img src={P10} className="w-[60px] " alt="" />
+        </a>
+        <a href="#" className="flex justify-center">
+          <img src={P11} className="w-[60px] " alt="" />
+        </a>
+        <a href="#" className="flex justify-center">
+          <img src={P12} className="w-[60px] " alt="" />
+        </a>
+        <a href="#" className="flex justify-center">
+          <img src={P13} className="w-[60px] " alt="" />
+        </a>
+        <a href="#" className="flex justify-center">
+          <img src={P14} className="w-[60px] " alt="" />
+        </a>
+      </motion.div>
+    </motion.div>
   );
 };
 

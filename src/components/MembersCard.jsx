@@ -6,7 +6,7 @@ import { GrLinkedinOption } from "react-icons/gr";
 const MembersCard = ({ data }) => {
   const { dp, name, title, linkdin, twitter } = data;
   return (
-    <div className="rounded-lg rounded-br-[30px] overflow-hidden min-w-[300px] mx-4 bg-violet-500/20 hover:bg-violet-800 duration-300">
+    <div className="rounded-lg rounded-br-[30px] overflow-hidden min-w-[200px] mx-4 bg-violet-500/20 hover:bg-violet-800 duration-300">
       <img
         src={dp}
         className="w-full border-2 border-violet-800 rounded-lg"

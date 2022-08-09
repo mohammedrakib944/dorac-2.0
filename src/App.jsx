@@ -6,13 +6,17 @@ import Roadmap from "./components/Roadmap";
 import Team from "./components/Team";
 import Partners from "./components/Partners";
 import Footer from "./components/Footer";
+import Merch from "./components/Merch";
+import Collections from "./components/Collections";
 
 function App() {
   return (
     <div>
       <Navbar />
       <Hero />
+      <Merch />
       <About />
+      <Collections />
       <Carusol />
       <Roadmap />
       <Team />

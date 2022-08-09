@@ -4,9 +4,18 @@ import blueDog from "../assets/blue-dog.png";
 import RoadCard from "./RoadCard";
 import { RoadMap } from "./Data";
 
+import { motion } from "framer-motion";
+import { FromBottom, PopUp } from "./animation";
+
 const Roadmap = () => {
   return (
-    <div style={{ backgroundImage: `url(${RoadmapBG})` }}>
+    <motion.div
+      style={{ backgroundImage: `url(${RoadmapBG})` }}
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      transition={{ staggerChildren: 0.2 }}
+      viewport={{ once: false, amount: 0.5 }}
+    >
       <div className="wrapper" id="roadmap">
         <div className=" w-full text-center">
           <h2 className="title">Roadmap</h2>
@@ -17,23 +26,33 @@ const Roadmap = () => {
 
         {/* main */}
         <div className="grid md:grid-cols-7 md:gap-12">
-          <div className="py-6 col-span-3 h-full md:flex items-center justify-end">
+          <motion.div
+            variants={PopUp}
+            className="py-6 col-span-3 h-full md:flex items-center justify-end"
+          >
             <img
               src={blueDog}
               className="md:max-w-[400px]  md:float-right md:pr-12"
               alt=""
             />
-          </div>
+          </motion.div>
           {/* xl:max-h-[600px] overflow-y-auto my-4 scrollbar-hide */}
-          <div className="text-white relative  col-span-4 md:pl-4">
-            <div className="w-[3px] md:w-[4px] absolute h-[100%] bg-gradient-to-t from-transparent via-violet-500 to-transparent ml-[23px]"></div>
+          <motion.div
+            className="xl:h-[550px] xl:snap-y xl:snap-mandatory overflow-y-auto scrollbar-hide text-gray-100 relative  col-span-4 md:pl-4"
+            variants={FromBottom}
+          >
             {RoadMap.map((data) => (
-              <RoadCard data={data} />
+              <div
+                className="xl:h-full xl:snap-center flex items-center"
+                key={data.id}
+              >
+                <RoadCard data={data} />
+              </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

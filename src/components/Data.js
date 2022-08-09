@@ -152,4 +152,37 @@ export const Members = [
     linkdin: "#",
     twitter: "#",
   },
+  {
+    id: 5,
+    dp: dp2,
+    name: "Tomas Selgala 4",
+    title: "CKO",
+    linkdin: "#",
+    twitter: "#",
+  },
+  {
+    id: 6,
+    dp: dp2,
+    name: "Tomas Selgala 4",
+    title: "CKO",
+    linkdin: "#",
+    twitter: "#",
+  },
+  {
+    id: 7,
+    dp: dp2,
+    name: "Tomas Selgala 4",
+    title: "CKO",
+    linkdin: "#",
+    twitter: "#",
+  },
+
+  {
+    id: 8,
+    dp: dp2,
+    name: "Tomas Selgala 4",
+    title: "CKO",
+    linkdin: "#",
+    twitter: "#",
+  },
 ];
