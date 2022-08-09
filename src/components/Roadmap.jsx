@@ -5,7 +5,7 @@ import RoadCard from "./RoadCard";
 import { RoadMap } from "./Data";
 
 import { motion } from "framer-motion";
-import { FromBottom, PopUp } from "./animation";
+import { PopUp } from "./animation";
 
 const Roadmap = () => {
   return (
@@ -16,7 +16,7 @@ const Roadmap = () => {
       transition={{ staggerChildren: 0.2 }}
       viewport={{ once: false, amount: 0.5 }}
     >
-      <div className="wrapper" id="roadmap">
+      <motion.div className="wrapper" id="roadmap">
         <div className=" w-full text-center">
           <h2 className="title">Roadmap</h2>
           <p className="text-gray-300 text-xl font-light mt-4 mb-10">
@@ -26,10 +26,7 @@ const Roadmap = () => {
 
         {/* main */}
         <div className="grid md:grid-cols-7 md:gap-12">
-          <motion.div
-            variants={PopUp}
-            className="py-6 col-span-3 h-full md:flex items-center justify-end"
-          >
+          <motion.div className="py-6 col-span-3 h-full md:flex items-center justify-end">
             <img
               src={blueDog}
               className="md:max-w-[400px]  md:float-right md:pr-12"
@@ -37,11 +34,8 @@ const Roadmap = () => {
             />
           </motion.div>
           {/* xl:max-h-[600px] overflow-y-auto my-4 scrollbar-hide */}
-          <motion.div
-            className="xl:h-[550px] xl:snap-y xl:snap-mandatory overflow-y-auto scrollbar-hide text-gray-100 relative  col-span-4 md:pl-4"
-            variants={FromBottom}
-          >
-            {RoadMap.map((data) => (
+          <motion.div className="xl:h-[550px] xl:snap-y xl:snap-mandatory overflow-y-auto scrollbar-hide text-gray-100 relative  col-span-4 md:pl-4">
+            {RoadMap.map((data, index) => (
               <div
                 className="xl:h-full xl:snap-center flex items-center"
                 key={data.id}
@@ -51,7 +45,7 @@ const Roadmap = () => {
             ))}
           </motion.div>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

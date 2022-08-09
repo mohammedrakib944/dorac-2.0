@@ -14,17 +14,11 @@ const Team = () => {
     <motion.div style={{ backgroundImage: `url(${TeamBG})` }}>
       <div className="wrapper" id="team">
         <h2 className="title w-full text-center">TEam members</h2>
-        <motion.div
-          className="max-w-[1080px] mx-auto mt-10  grid md:grid-cols-2 xl:grid-cols-3 gap-y-10"
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          transition={{ staggerChildren: 0.2 }}
-          viewport={{ once: false, amount: 0.3 }}
-        >
+        <motion.div className="max-w-[1080px] mx-auto mt-10  grid md:grid-cols-2 xl:grid-cols-3 gap-y-10">
           {Members.map((data) => (
-            <motion.div variants={PopUp}>
-              <MembersCard key={data.id} data={data} />
-            </motion.div>
+            // <motion.div variants={PopUp}>
+            <MembersCard key={data.id} data={data} />
+            // </motion.div>
           ))}
         </motion.div>
       </div>
