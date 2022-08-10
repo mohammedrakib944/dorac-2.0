@@ -16,6 +16,10 @@ import P14 from "../assets/clients/sp14.png";
 
 import { motion } from "framer-motion";
 import { PopUp } from "./animation";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { settings } from "./Settings";
 
 const Partners = () => {
   return (
@@ -29,51 +33,53 @@ const Partners = () => {
       <h2 className="title w-full text-center mt-12">Partners</h2>
       <motion.div
         variants={PopUp}
-        className="max-w-[1080px] mx-auto grid grid-cols-3 px-4 md:grid-cols-7 gap-12 my-20"
+        className="max-w-[1080px] mx-12 xl:mx-auto my-20"
         id="partners"
       >
-        <a href="#" className="flex justify-center">
-          <img src={P1} className="w-[60px] " alt="" />
-        </a>
-        <a href="#" className="flex justify-center">
-          <img src={P2} className="w-[60px] " alt="" />
-        </a>
-        <a href="#" className="flex justify-center">
-          <img src={P3} className="w-[60px] " alt="" />
-        </a>
-        <a href="#" className="flex justify-center">
-          <img src={P4} className="w-[60px] " alt="" />
-        </a>
-        <a href="#" className="flex justify-center">
-          <img src={P5} className="w-[60px] " alt="" />
-        </a>
-        <a href="#" className="flex justify-center">
-          <img src={P6} className="w-[60px] " alt="" />
-        </a>
-        <a href="#" className="flex justify-center">
-          <img src={P7} className="w-[60px] " alt="" />
-        </a>
-        <a href="#" className="flex justify-center">
-          <img src={P8} className="w-[60px] " alt="" />
-        </a>
-        <a href="#" className="flex justify-center">
-          <img src={P9} className="w-[60px] " alt="" />
-        </a>
-        <a href="#" className="flex justify-center">
-          <img src={P10} className="w-[60px] " alt="" />
-        </a>
-        <a href="#" className="flex justify-center">
-          <img src={P11} className="w-[60px] " alt="" />
-        </a>
-        <a href="#" className="flex justify-center">
-          <img src={P12} className="w-[60px] " alt="" />
-        </a>
-        <a href="#" className="flex justify-center">
-          <img src={P13} className="w-[60px] " alt="" />
-        </a>
-        <a href="#" className="flex justify-center">
-          <img src={P14} className="w-[60px] " alt="" />
-        </a>
+        <Slider {...settings}>
+          <a href="#" className="!flex items-center justify-center">
+            <img src={P1} className="w-[60px] " alt="" />
+          </a>
+          <a href="#" className="!flex justify-center">
+            <img src={P2} className="w-[60px] " alt="" />
+          </a>
+          <a href="#" className="!flex justify-center">
+            <img src={P3} className="w-[60px] " alt="" />
+          </a>
+          <a href="#" className="!flex justify-center">
+            <img src={P4} className="w-[60px] " alt="" />
+          </a>
+          <a href="#" className="!flex justify-center">
+            <img src={P5} className="w-[60px] " alt="" />
+          </a>
+          <a href="#" className="!flex justify-center">
+            <img src={P6} className="w-[60px] " alt="" />
+          </a>
+          <a href="#" className="!flex justify-center">
+            <img src={P7} className="w-[60px] " alt="" />
+          </a>
+          <a href="#" className="!flex justify-center">
+            <img src={P8} className="w-[60px] " alt="" />
+          </a>
+          <a href="#" className="!flex justify-center">
+            <img src={P9} className="w-[60px] " alt="" />
+          </a>
+          <a href="#" className="!flex justify-center">
+            <img src={P10} className="w-[60px] " alt="" />
+          </a>
+          <a href="#" className="!flex justify-center">
+            <img src={P11} className="w-[60px] " alt="" />
+          </a>
+          <a href="#" className="!flex justify-center">
+            <img src={P12} className="w-[60px] " alt="" />
+          </a>
+          <a href="#" className="!flex justify-center">
+            <img src={P13} className="w-[60px] " alt="" />
+          </a>
+          <a href="#" className="!flex justify-center">
+            <img src={P14} className="w-[60px] " alt="" />
+          </a>
+        </Slider>
       </motion.div>
     </motion.div>
   );
