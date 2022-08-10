@@ -1,6 +1,6 @@
 import React from "react";
 import BG from "../assets/home-bg.png";
-import HomeLogo from "../assets/home-logo.png";
+import HomeLogo from "../assets/LogoHD.png";
 import ButtonBG from "../assets/button-bg.png";
 import GoldenDog from "../assets/gold-dog.png";
 import PinkDog from "../assets/pink-dog.png";
@@ -36,7 +36,7 @@ const Hero = () => {
         <motion.div className="max-w-[1024px] flex flex-col items-center justify-center gap-y-4 px-4">
           <motion.div variants={PopUp}>
             <img
-              className="w-[250px] md:w-[350px] lg:w-[400px]"
+              className="max-w-[170px] md:max-w-[200px] md:w-[350px] lg:w-[400px]"
               src={HomeLogo}
               alt=""
             />

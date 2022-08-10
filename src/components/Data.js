@@ -8,19 +8,19 @@ export const Data = [
     id: 1,
     image: greenDog,
     title: "Our Native Token 1",
-    para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae eligendi tempora dolores consequuntur. Soluta temporibus odit dolore, quae expedita alias voluptatem incidunt modi ullam et culpa architecto ipsam ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae eligendi tempora dolores consequuntur. Soluta temporibus odit dolore, quae expedita alias voluptatem incidunt modi ullam et culpa architecto ipsam ipsum?",
+    para: "Our Native Token DORC is DEFLATIONARY and built on Binance Smart Chain, you can use it to participate in races, training and feeding your dogs, or use it for any other amazing services we have planned for your dogs. You can read more about tokenomics in our whitepaper",
   },
   {
     id: 2,
     image: redDog,
     title: "Our Native Token 2",
-    para: "Soluta temporibus odit dolore, quae expedita alias voluptatem incidunt modi ullam et culpa architecto ipsam ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae eligendi tempora dolores consequuntur. Soluta temporibus odit dolore, quae expedita alias voluptatem incidunt modi ullam et culpa architecto ipsam ipsum?",
+    para: "Our Native Token DORC is DEFLATIONARY and built on Binance Smart Chain, you can use it to participate in races, training and feeding your dogs, or use it for any other amazing services we have planned for your dogs. You can read more about tokenomics in our whitepaper",
   },
   {
     id: 3,
     image: greenDog,
     title: "Our Native Token 3",
-    para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae eligendi tempora dolores consequuntur. Sempora dolores consequuntur. Soluta temporibus odit dolore, quae expedita alias voluptatem incidunt modi ullam et culpa architecto ipsam ipsum?",
+    para: "Our Native Token DORC is DEFLATIONARY and built on Binance Smart Chain, you can use it to participate in races, training and feeding your dogs, or use it for any other amazing services we have planned for your dogs. You can read more about tokenomics in our whitepaper",
   },
 ];
 
@@ -29,7 +29,7 @@ export const RoadMap = [
     id: 1,
     text: [
       {
-        title: "Initial Game",
+        title: "Initial game design",
         status: "DONE",
       },
       {
@@ -37,12 +37,12 @@ export const RoadMap = [
         status: "ONGOING",
       },
       {
-        title: "TOKEN development audit",
+        title: "TOKEN development + audit",
         status: "DONE",
       },
       {
-        title: "Initial Game",
-        status: "ONGOING",
+        title: "Initial Design for NFT art",
+        status: "DONE",
       },
     ],
   },
@@ -50,16 +50,20 @@ export const RoadMap = [
     id: 2,
     text: [
       {
-        title: "Initial Game",
-        status: "DONE",
-      },
-      {
-        title: "Community growth",
+        title: "Fundraising",
         status: "ONGOING",
       },
       {
-        title: "TOKEN development audit",
+        title: "ART release and sneak peeks",
         status: "DONE",
+      },
+      {
+        title: "Video of future gameplay",
+        status: "DONE",
+      },
+      {
+        title: "Marketing - influencer, PR, AD campaigns",
+        status: "ONGOING",
       },
     ],
   },
@@ -67,16 +71,20 @@ export const RoadMap = [
     id: 3,
     text: [
       {
-        title: "Initial Game",
+        title: "Game Demo alpha",
         status: "DONE",
       },
       {
-        title: "Community growth",
+        title: "Smart Contract development",
         status: "ONGOING",
       },
       {
-        title: "TOKEN development audit",
-        status: "DONE",
+        title: "Community tests of game",
+        status: "ONGOING",
+      },
+      {
+        title: "Marketplace launch",
+        status: "Q2 2022",
       },
     ],
   },
@@ -84,16 +92,20 @@ export const RoadMap = [
     id: 4,
     text: [
       {
-        title: "Initial Game",
-        status: "DONE",
+        title: "Public sale & TGE",
+        status: "Q3 2022",
       },
       {
-        title: "Community growth",
-        status: "ONGOING",
+        title: "NFT mint",
+        status: "Q3 2022",
       },
       {
-        title: "TOKEN development audit",
-        status: "DONE",
+        title: "Launch of the Game",
+        status: "Q3 2022",
+      },
+      {
+        title: "1st Derby 100K grand Prix",
+        status: "Q4 2022",
       },
     ],
   },
@@ -104,16 +116,16 @@ export const RoadMap = [
         title: "Game Expansion",
         status: "Q1 2023",
       },
-      { title: "New cities" },
+      { title: "New Cities" },
       { title: "Building Upgrades" },
       { title: "Industrial expansion" },
       {
-        title: "Community growth",
-        status: "ONGOING",
+        title: "Introduction of dog insurance system",
+        status: "Q1 2023",
       },
       {
-        title: "TOKEN development audit",
-        status: "DONE",
+        title: "MMORPG release",
+        status: "planned for Q2 2023",
       },
     ],
   },

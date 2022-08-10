@@ -27,10 +27,11 @@ const Collections = () => {
             COLLECTIONS
           </h2>
           <p className="text-gray-300 para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit hic
-            eaque, quia consequatur sunt neque quo totam, sint animi
-            necessitatibus non aliquam quaerat iure. Ipsum doloribus praesentium
-            exercitationem magnam laudantium?
+            lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+            sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
+            amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+            tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat
+            auctor eu in elit.
           </p>
         </motion.div>
         <div className="col-span-3">

@@ -27,13 +27,13 @@ const About = () => {
             About the game
           </h2>
           <p className="para max-w-[720px] mt-4 leading-7">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            repudiandae eligendi tempora dolores consequuntur. Soluta temporibus
-            odit dolore, quae expedita alias voluptatem incidunt modi ullam et
-            culpa architecto ipsam ipsum? Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Voluptates repudiandae eligendi tempora dolores
-            consequuntur. Soluta temporibus odit dolore, quae expedita alias
-            voluptatem incidunt modi ullam et culpa architecto ipsam ipsum?
+            DoRac is a metaverse space crypto play-to-earn game that will offer
+            a few ways on how you as a player or just a visitor can participate
+            in the metaverse. Starting with raising your own dogs, breeding, and
+            training them to perform better in competitions and races. As a
+            company, we want to provide our users with an entertaining metaverse
+            where they can have fun and earn money by playing. Exciting upgrades
+            will come along with platform growth.
           </p>
         </motion.div>
       </motion.div>

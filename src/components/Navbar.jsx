@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BsPersonLinesFill, BsMoonStars, BsSun } from "react-icons/bs";
+import { BsPersonLinesFill } from "react-icons/bs";
 
-import logo from "../assets/home-logo.png";
+import logo from "../assets/logo.png";
 import { NavLinks } from "./Navlinks";
 
 const Navbar = () => {
