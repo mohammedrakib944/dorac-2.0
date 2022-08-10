@@ -4,6 +4,7 @@ import AboutSide from "../assets/about-side.png";
 
 import { motion } from "framer-motion";
 import { FromRightNormal, PopUp } from "./animation";
+import { AiOutlineArrowDown } from "react-icons/ai";
 
 const About = () => {
   return (
@@ -35,6 +36,16 @@ const About = () => {
             where they can have fun and earn money by playing. Exciting upgrades
             will come along with platform growth.
           </p>
+
+          <div>
+            <a
+              href="#"
+              className="bg-cyan-700 text-white py-3 px-12 flex w-fit text-xl items-center gap-2 rounded-lg mt-6 hover:bg-cyan-600 duration-300"
+              download={true}
+            >
+              Whitepaper <AiOutlineArrowDown />
+            </a>
+          </div>
         </motion.div>
       </motion.div>
     </motion.div>
