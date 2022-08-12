@@ -6,7 +6,7 @@ import {
 
 import CarusolCard from "./CarusolCard";
 import AboutBG from "../assets/bg-2.png";
-import { Data } from "./Data.js";
+import { Data } from "./Data";
 
 import { motion } from "framer-motion";
 import { FromLeftNormal, PopUp } from "./animation";

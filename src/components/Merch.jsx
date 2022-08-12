@@ -14,9 +14,11 @@ const Merch = () => {
       viewport={{ once: false, amount: 0.5 }}
     >
       <motion.div className="max-w-[700px]">
-        <h2 className="title mt-[40px] w-full text-center">MERCH</h2>
+        <h2 className="title mt-[40px] w-full text-center mb-12">MERCH</h2>
         <motion.div variants={Rotate}>
-          <img src={comming} alt="" />
+          <a href="#" className="bg-violet-500 py-3 px-6 rounded-md text-white">
+            Shopify Marchent
+          </a>
         </motion.div>
       </motion.div>
     </motion.div>

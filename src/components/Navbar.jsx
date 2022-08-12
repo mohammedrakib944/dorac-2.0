@@ -5,6 +5,7 @@ import { BsPersonLinesFill } from "react-icons/bs";
 
 import logo from "../assets/logo.png";
 import { NavLinks } from "./Navlinks";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -30,23 +31,37 @@ const Navbar = () => {
     >
       <div className=" container mx-auto flex w-full h-full justify-between items-center px-2 2xl:px-16">
         <div>
-          <a href="/#">
+          <Link to="/#">
             <img
               src={logo}
               className={shadow ? "w-[50px]" : "w-[60px] md:w-[70px]"}
               alt=""
             />
-          </a>
+          </Link>
         </div>
 
         <div className="flex items-center justify-center">
-          <ul className="hidden md:flex md:gap-x-3 lg:gap-x-6">
-            {NavLinks.map((data) => (
-              <a href={data.url} key={data.id}>
-                <li className="c-link text-md text-gray-200 hover:text-sky-400 hover:border-b duration-300">
-                  {data.text}
-                </li>
+          <ul className="hidden md:flex md:gap-x-3 lg:gap-x-6 mt-5">
+            <li className="c-link ml-0 mb-6 w-fit text-gray-100 hover:border-b hover:text-cyan-500 duration-300">
+              <a
+                href="https://dorac.app/whitepaper/626c73845d4eb45942f0e7dd"
+                target="_blank"
+              >
+                Whitepaper
               </a>
+            </li>
+            {NavLinks.map((data) => (
+              <NavLink to={data.url} key={data.id}>
+                {data.text === "Marketplace" ? (
+                  <button className="py-2 px-6 bg-violet-600 text-white rounded-lg hover:bg-violet-700 duration-300 -mt-2">
+                    {data.text}
+                  </button>
+                ) : (
+                  <li className="c-link ml-0 mb-6 w-fit text-gray-100 hover:border-b hover:text-cyan-500 duration-300">
+                    {data.text}
+                  </li>
+                )}
+              </NavLink>
             ))}
           </ul>
           <div
@@ -90,11 +105,17 @@ const Navbar = () => {
           <div className="h-[70%] py-4 flex flex-col justify-between">
             <ul>
               {NavLinks.map((data) => (
-                <a href={data.url} key={data.id}>
-                  <li className="c-link ml-0 mb-6 w-fit text-gray-100">
-                    {data.text}
-                  </li>
-                </a>
+                <NavLink to={data.url} key={data.id}>
+                  {data.text === "Marketplace" ? (
+                    <button className="py-2 px-6 bg-violet-500 text-white rounded-lg hover:bg-violet-600 duration-300 -mt-2">
+                      {data.text}
+                    </button>
+                  ) : (
+                    <li className="c-link ml-0 mb-6 w-fit text-gray-100">
+                      {data.text}
+                    </li>
+                  )}
+                </NavLink>
               ))}
             </ul>
             <div>

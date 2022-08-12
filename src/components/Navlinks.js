@@ -6,13 +6,8 @@ export const NavLinks = [
   },
   {
     id: 2,
-    text: "About The Game",
+    text: "About",
     url: "/#about",
-  },
-  {
-    id: 3,
-    text: "Decentralised Economy",
-    url: "/#economy",
   },
   {
     id: 4,
@@ -21,12 +16,17 @@ export const NavLinks = [
   },
   {
     id: 5,
-    text: "The Team members",
+    text: "Team",
     url: "/#team",
   },
   {
     id: 6,
-    text: "Partners",
-    url: "/#partners",
+    text: "Learn",
+    url: "/learn",
+  },
+  {
+    id: 8,
+    text: "Marketplace",
+    url: "#",
   },
 ];

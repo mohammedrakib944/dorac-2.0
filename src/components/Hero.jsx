@@ -1,4 +1,5 @@
 import React from "react";
+import "./custom.css";
 import BG from "../assets/home-bg.png";
 import HomeLogo from "../assets/LogoHD.png";
 import ButtonBG from "../assets/button-bg.png";
@@ -7,6 +8,7 @@ import PinkDog from "../assets/pink-dog.png";
 
 import { motion } from "framer-motion";
 import { FromLeft, FromRight, PopUp } from "./animation";
+import Social from "./Social";
 
 const Hero = () => {
   return (
@@ -32,6 +34,9 @@ const Hero = () => {
           alt=""
         />
       </motion.div>
+      <div className="hidden md:block fixed right-0 top-[30%] mr-12">
+        <Social vartically />
+      </div>
       <motion.div className="min-h-screen in-wrapper flex items-center justify-center relative z-10">
         <motion.div className="max-w-[1024px] flex flex-col items-center justify-center gap-y-4 px-4">
           <motion.div variants={PopUp}>
@@ -42,11 +47,8 @@ const Hero = () => {
             />
           </motion.div>
           <h1 className="text-white text-center">
-            A{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-emerald-600">
-              METAVERSE SPACE{" "}
-            </span>{" "}
-            PLAY-TO-EARN GAME.
+            A <span className="linear-wipe">METAVERSE SPACE </span> PLAY-TO-EARN
+            GAME.
           </h1>
           <p className="text-gray-300 text-center mb-10">
             Start with raising your own dogs, breeding, and training them to
@@ -58,7 +60,7 @@ const Hero = () => {
             className="py-3 w-[300px] font-bold h-[60px] px-6 bg-contain bg-no-repeat bg-center text-white"
             style={{ backgroundImage: `url(${ButtonBG})` }}
           >
-            Watch Now
+            Play Now
           </motion.button>
         </motion.div>
       </motion.div>

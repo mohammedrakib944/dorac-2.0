@@ -1,6 +1,7 @@
-import RedDog from "../assets/red-dog.png";
 import AboutBG from "../assets/bg-2.png";
-import AboutSide from "../assets/about-side.png";
+
+import Video1 from "../assets/video/video.mp4";
+import Video2 from "../assets/video/video2.mp4";
 
 import { motion } from "framer-motion";
 import { FromRightNormal, PopUp } from "./animation";
@@ -18,7 +19,11 @@ const About = () => {
     >
       <motion.div className="grid md:grid-cols-7 gap-6">
         <motion.div variants={PopUp} className="md:col-span-3">
-          <img src={AboutSide} alt="" />
+          <div>
+            <video src={Video1} autoPlay loop={true} controls />
+            <br />
+            <video src={Video2} autoPlay loop={true} controls />
+          </div>
         </motion.div>
         <motion.div
           variants={FromRightNormal}

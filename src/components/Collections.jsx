@@ -3,11 +3,14 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { settings2 } from "./Settings";
 
-import Connection1 from "../assets/collection-1.png";
-import Connection2 from "../assets/collection-2.png";
-
 import { motion } from "framer-motion";
 import { FromLeftNormal, PopUp } from "./animation";
+
+import col1 from "../assets/collection/col1.jpg";
+import col2 from "../assets/collection/col2.jpg";
+import dog2 from "../assets/collection/dog2.jpeg";
+import col3 from "../assets/collection/col3.jpg";
+import col4 from "../assets/collection/col4.jpg";
 
 const Collections = () => {
   return (
@@ -27,27 +30,33 @@ const Collections = () => {
             COLLECTIONS
           </h2>
           <p className="text-gray-300 para">
-            lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
-            sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
-            amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
-            tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat
-            auctor eu in elit.
+            Explore our first five project collections. Get your dog, player ID,
+            usable, mintpas,s, or mystery box. Each of these collections plays a
+            role in our game, so be sure to get one if you want to take full
+            advantage of the offered services. More collections will be added
+            over time together with game growth and project expansions, so be
+            sure to check here from time to time. The key thing to keep in mind
+            is that for now our collections are only tradable in our official
+            marketplace.
           </p>
         </motion.div>
         <div className="col-span-3">
           <motion.div className="mt-10 max-w-[1080px] mx-auto" variants={PopUp}>
             <Slider {...settings2}>
-              <div>
-                <img src={Connection1} alt="" />
+              <div className="border-2 border-gray-100/50">
+                <img src={col1} alt="" />
               </div>
-              <div>
-                <img src={Connection2} alt="" />
+              <div className="border-2 border-gray-100/50">
+                <img src={col2} alt="" />
               </div>
-              <div>
-                <img src={Connection1} alt="" />
+              <div className="border-2 border-gray-100/50">
+                <img src={col4} alt="" />
               </div>
-              <div>
-                <img src={Connection2} alt="" />
+              <div className="border-2 border-gray-100/50">
+                <img src={col3} alt="" />
+              </div>
+              <div className="border-2 border-gray-100/50">
+                <img src={dog2} alt="" />
               </div>
             </Slider>
           </motion.div>
