@@ -6,11 +6,10 @@ import { settings2 } from "./Settings";
 import { motion } from "framer-motion";
 import { FromLeftNormal, PopUp } from "./animation";
 
-import col1 from "../assets/collection/col1.jpg";
-import col2 from "../assets/collection/col2.jpg";
-import dog2 from "../assets/collection/dog2.jpeg";
-import col3 from "../assets/collection/col3.jpg";
-import col4 from "../assets/collection/col4.jpg";
+import dog1 from "../assets/collection/dog-black.png";
+import dog2 from "../assets/collection/dog-blue.png";
+import dog3 from "../assets/collection/dog-green.png";
+import dog4 from "../assets/collection/dog-red.png";
 
 const Collections = () => {
   return (
@@ -43,20 +42,17 @@ const Collections = () => {
         <div className="col-span-3">
           <motion.div className="mt-10 max-w-[1080px] mx-auto" variants={PopUp}>
             <Slider {...settings2}>
-              <div className="border-2 border-gray-100/50">
-                <img src={col1} alt="" />
+              <div className="border-r">
+                <img src={dog1} alt="" />
               </div>
-              <div className="border-2 border-gray-100/50">
-                <img src={col2} alt="" />
-              </div>
-              <div className="border-2 border-gray-100/50">
-                <img src={col4} alt="" />
-              </div>
-              <div className="border-2 border-gray-100/50">
-                <img src={col3} alt="" />
-              </div>
-              <div className="border-2 border-gray-100/50">
+              <div className="border-r">
                 <img src={dog2} alt="" />
+              </div>
+              <div className="border-r">
+                <img src={dog3} alt="" />
+              </div>
+              <div className="border-r">
+                <img src={dog4} alt="" />
               </div>
             </Slider>
           </motion.div>

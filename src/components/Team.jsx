@@ -11,7 +11,7 @@ import { PopUp, FromBottom } from "./animation";
 
 const Team = () => {
   return (
-    <motion.div style={{ backgroundImage: `url(${TeamBG})` }}>
+    <motion.div style={{ backgroundImage: `url(${""})` }}>
       <div className="wrapper" id="team">
         <h2 className="title w-full text-center">TEam members</h2>
         <motion.div className="max-w-[1080px] mx-auto mt-10  grid md:grid-cols-2 xl:grid-cols-3 gap-y-10">

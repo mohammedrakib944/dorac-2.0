@@ -24,9 +24,4 @@ export const NavLinks = [
     text: "Learn",
     url: "/learn",
   },
-  {
-    id: 8,
-    text: "Marketplace",
-    url: "#",
-  },
 ];

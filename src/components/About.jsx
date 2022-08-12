@@ -1,7 +1,8 @@
 import AboutBG from "../assets/bg-2.png";
+import "./custom.css";
 
-import Video1 from "../assets/video/video.mp4";
-import Video2 from "../assets/video/video2.mp4";
+import Video1 from "../assets/video/video.gif";
+import Video2 from "../assets/video/video2.gif";
 
 import { motion } from "framer-motion";
 import { FromRightNormal, PopUp } from "./animation";
@@ -11,18 +12,26 @@ const About = () => {
   return (
     <motion.div
       className="wrapper mt-6 lg:mt-0 overflow-hidden"
-      style={{ backgroundImage: `url(${AboutBG})` }}
+      style={{ backgroundImage: `url(${""})` }}
       initial={"offscreen"}
       whileInView={"onscreen"}
       transition={{ staggerChildren: 0.2 }}
       viewport={{ once: false, amount: 0.5 }}
     >
-      <motion.div className="grid md:grid-cols-7 gap-6">
-        <motion.div variants={PopUp} className="md:col-span-3">
-          <div>
-            <video src={Video1} autoPlay loop={true} controls />
+      <motion.div className="grid md:grid-cols-7 gap-6 relative">
+        <motion.div variants={PopUp} className="md:col-span-3 relative">
+          <div className="transform3D">
+            <img
+              className="border-2 border-gray-100/50 xl:absolute rounded-xl mt-20 xl:-mt-12 xl:ml-12"
+              src={Video1}
+              alt=""
+            />
             <br />
-            <video src={Video2} autoPlay loop={true} controls />
+            <img
+              className="w-[80%] border-2 border-gray-100/50 xl:absolute rounded-xl mt-[-50px] ml-[100px] xl:ml-0 xl:mt-12 xl:left-40"
+              src={Video2}
+              alt=""
+            />
           </div>
         </motion.div>
         <motion.div

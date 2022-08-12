@@ -9,7 +9,7 @@ import AboutBG from "../assets/bg-2.png";
 import { Data } from "./Data";
 
 import { motion } from "framer-motion";
-import { FromLeftNormal, PopUp } from "./animation";
+import { PopUp } from "./animation";
 
 const Carusol = () => {
   const [item, setItem] = useState(1);
@@ -26,7 +26,7 @@ const Carusol = () => {
 
   return (
     <motion.div
-      style={{ backgroundImage: `url(${AboutBG})` }}
+      style={{ backgroundImage: `url(${""})` }}
       initial={"offscreen"}
       whileInView={"onscreen"}
       transition={{ staggerChildren: 0.2 }}

@@ -42,6 +42,13 @@ const Navbar = () => {
 
         <div className="flex items-center justify-center">
           <ul className="hidden md:flex md:gap-x-3 lg:gap-x-6 mt-5">
+            {NavLinks.map((data) => (
+              <NavLink to={data.url} key={data.id}>
+                <li className="c-link ml-0 mb-6 w-fit text-gray-100 hover:border-b hover:text-cyan-500 duration-300">
+                  {data.text}
+                </li>
+              </NavLink>
+            ))}
             <li className="c-link ml-0 mb-6 w-fit text-gray-100 hover:border-b hover:text-cyan-500 duration-300">
               <a
                 href="https://dorac.app/whitepaper/626c73845d4eb45942f0e7dd"
@@ -50,19 +57,13 @@ const Navbar = () => {
                 Whitepaper
               </a>
             </li>
-            {NavLinks.map((data) => (
-              <NavLink to={data.url} key={data.id}>
-                {data.text === "Marketplace" ? (
-                  <button className="py-2 px-6 bg-violet-600 text-white rounded-lg hover:bg-violet-700 duration-300 -mt-2">
-                    {data.text}
-                  </button>
-                ) : (
-                  <li className="c-link ml-0 mb-6 w-fit text-gray-100 hover:border-b hover:text-cyan-500 duration-300">
-                    {data.text}
-                  </li>
-                )}
-              </NavLink>
-            ))}
+            <li>
+              <a href="#">
+                <button className="py-2 px-6 bg-violet-600 text-white rounded-lg hover:bg-violet-700 duration-300 -mt-2">
+                  Marketplace
+                </button>
+              </a>
+            </li>
           </ul>
           <div
             onClick={handleNav}
@@ -117,6 +118,13 @@ const Navbar = () => {
                   )}
                 </NavLink>
               ))}
+              <li>
+                <a href="#">
+                  <button className="py-2 px-6 bg-violet-600 text-white rounded-lg hover:bg-violet-700 duration-300 -mt-2">
+                    Marketplace
+                  </button>
+                </a>
+              </li>
             </ul>
             <div>
               <p className="uppercase font-bold tracking-widest text-sky-400">

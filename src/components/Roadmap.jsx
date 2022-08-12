@@ -10,7 +10,7 @@ import { PopUp } from "./animation";
 const Roadmap = () => {
   return (
     <motion.div
-      style={{ backgroundImage: `url(${RoadmapBG})` }}
+      style={{ backgroundImage: `url(${""})` }}
       initial={"offscreen"}
       whileInView={"onscreen"}
       transition={{ staggerChildren: 0.2 }}
