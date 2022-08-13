@@ -52,7 +52,7 @@ const About = () => {
               playing. Exciting upgrades will come along with platform growth.
             </p>
 
-            <div>
+            <div className="flex justify-center md:justify-start">
               <a
                 href="#"
                 className="bg-cyan-700 text-white py-3 px-12 flex w-fit text-xl items-center gap-2 rounded-lg mt-6 hover:bg-cyan-600 duration-300"

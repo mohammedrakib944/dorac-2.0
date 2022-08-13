@@ -11,9 +11,6 @@ const Merch = () => {
       transition={{ staggerChildren: 0.2 }}
       viewport={{ once: false, amount: 0.5 }}
     >
-      <div>
-        <p>Nothing is impossible</p>
-      </div>
       <motion.div className="max-w-[700px]">
         <h2 className="title mt-[40px] w-full text-center mb-12">MERCH</h2>
         <motion.div variants={Rotate}>
