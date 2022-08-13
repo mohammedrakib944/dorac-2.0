@@ -246,32 +246,32 @@ export const social = [
   {
     id: 1,
     icon: <FaTelegramPlane />,
-    utl: "",
+    url: "https://t.me/DoRacOfficialchat",
   },
   {
     id: 2,
     icon: <BsTwitter />,
-    utl: "",
+    url: "https://twitter.com/DoRac_Official",
   },
   {
     id: 3,
     icon: <BsFacebook />,
-    utl: "",
+    url: "https://www.facebook.com/DogeRaceOfficial",
   },
   {
     id: 4,
     icon: <BsInstagram />,
-    utl: "",
+    url: "https://www.instagram.com/dorac_official/",
   },
   {
     id: 5,
     icon: <BsMedium />,
-    utl: "",
+    url: "https://medium.com/@DoRacOfficial",
   },
   {
     id: 6,
     icon: <FaDiscord />,
-    utl: "",
+    url: "https://discord.gg/vswdzWUVm8",
   },
 ];
 

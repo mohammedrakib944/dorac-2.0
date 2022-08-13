@@ -17,7 +17,7 @@ export const NavLinks = [
   {
     id: 5,
     text: "Team",
-    url: "#team",
+    url: "/#team",
   },
   {
     id: 6,

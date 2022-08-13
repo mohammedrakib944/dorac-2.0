@@ -1,5 +1,4 @@
 import React from "react";
-import "./custom.css";
 import BG from "../assets/home-bg.png";
 import HomeLogo from "../assets/LogoHD.png";
 import ButtonBG from "../assets/button-bg.png";
@@ -9,6 +8,7 @@ import PinkDog from "../assets/pink-dog.png";
 import { motion } from "framer-motion";
 import { FromLeft, FromRight, PopUp } from "./animation";
 import Social from "./Social";
+import "./custom.css";
 
 const Hero = () => {
   return (
@@ -47,8 +47,8 @@ const Hero = () => {
             />
           </motion.div>
           <h1 className="text-white text-center">
-            A <span className="linear-wipe">METAVERSE SPACE </span> PLAY-TO-EARN
-            GAME.
+            A <span className="gradientTextAnimation">METAVERSE SPACE </span>{" "}
+            PLAY AND EARN GAME.
           </h1>
           <p className="text-gray-300 text-center mb-10">
             Start with raising your own dogs, breeding, and training them to

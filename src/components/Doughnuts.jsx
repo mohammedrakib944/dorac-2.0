@@ -1,28 +1,45 @@
 import React from "react";
-import { Pie, Doughnut } from "react-chartjs-2";
+import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
 const Data = {
-  labels: ["Angel", "Seed", "Presale", "IDO", "Marketing", "Team"],
+  labels: [
+    "Advisors",
+    "Initial LP",
+    "Prizes",
+    "IDO",
+    "Presale",
+    "Treasury",
+    "Team",
+    "Angel",
+    "Seed",
+  ],
   datasets: [
     {
       label: "Rainfall",
       backgroundColor: [
-        "#3399ff",
-        "#2d89e5",
-        "#287acc",
-        "#236bb2",
-        "#1e5b99",
-        "194c7f",
+        "#A6B1B3",
+        "#809CA0",
+        "#5D848B",
+        "#376670",
+        "#0F3F49",
+        "#523E85",
+        "#70639B",
+        "#8F83A9",
+        "#ADA6B8",
       ],
       hoverBackgroundColor: [
-        "#6e0da6",
-        "#6e0da6",
-        "#6e0da6",
-        "#6e0da6",
-        "#6e0da6",
+        "#A6B1B3",
+        "#809CA0",
+        "#5D848B",
+        "#376670",
+        "#0F3F49",
+        "#523E85",
+        "#70639B",
+        "#8F83A9",
+        "#ADA6B8",
       ],
-      data: [2.5, 5, 7.5, 14, 7.5, 0],
+      data: [1.0, 2.7, 6.0, 10.0, 10.4, 20.0, 16.6, 8.3, 8.3, 16.7],
     },
   ],
 };

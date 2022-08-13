@@ -1,20 +1,23 @@
-.linear-wipe {
+.gradientTextAnimation {
+  text-align: center;
   background: linear-gradient(
-    45deg,
-    white 20%,
-    rgb(1, 198, 247) 40%,
-    rgb(169, 3, 219) 60%,
-    white 80%
+    to right,
+    #fff 20%,
+    rgb(0, 217, 255) 40%,
+    rgb(119, 0, 255) 60%,
+    #fff 80%
   );
   background-size: 200% auto;
+
   color: #000;
   background-clip: text;
-  text-fill-color: transparent;
+  color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animate 2s linear infinite;
+
+  animation: shine 2s linear infinite;
 }
-@keyframes animate {
+@keyframes shine {
   to {
     background-position: 200% center;
   }

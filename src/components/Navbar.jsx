@@ -7,6 +7,7 @@ import logo from "../assets/logo.png";
 import { NavLinks } from "./Navlinks";
 import { NavLink, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import Social from "./Social";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -97,11 +98,8 @@ const Navbar = () => {
                 <AiOutlineClose />
               </div>
             </div>
-            <div className="border-b border-gray-400 my-4">
-              <p className="w-[85%] md:w-[90%] py-4 text-gray-400">
-                Lorem ipsum dolor sit amet.
-              </p>
-            </div>
+            <br />
+            <hr />
           </div>
 
           <div className="h-[70%] py-4 flex flex-col justify-between">
@@ -131,19 +129,9 @@ const Navbar = () => {
               <p className="uppercase font-bold tracking-widest text-sky-400">
                 Let&apos;s Connect
               </p>
-              <div className="flex items-center justify-between my-4 max-w-[250px] text-gray-200">
-                <div className="c-button">
-                  <FaLinkedinIn />
-                </div>
-                <div className="c-button">
-                  <FaGithub />{" "}
-                </div>
-                <div className="c-button">
-                  <AiOutlineMail />{" "}
-                </div>
-                <div className="c-button">
-                  <BsPersonLinesFill />
-                </div>
+              <br />
+              <div className="-ml-5">
+                <Social />
               </div>
             </div>
           </div>
