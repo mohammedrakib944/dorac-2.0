@@ -6,7 +6,6 @@ import Video1 from "../assets/video/video2.gif";
 
 import { motion } from "framer-motion";
 import { FromRightNormal, PopUp } from "./animation";
-import { AiOutlineArrowDown } from "react-icons/ai";
 
 import BG1 from "../assets/bg/bg1.png";
 
@@ -54,11 +53,11 @@ const About = () => {
 
             <div className="flex justify-center md:justify-start">
               <a
-                href="#"
+                href="https://dorac.app/whitepaper/626c73845d4eb45942f0e7dd"
                 className="bg-cyan-700 text-white py-3 px-12 flex w-fit text-xl items-center gap-2 rounded-lg mt-6 hover:bg-cyan-600 duration-300"
                 download={true}
               >
-                Whitepaper <AiOutlineArrowDown />
+                Whitepaper
               </a>
             </div>
           </motion.div>
