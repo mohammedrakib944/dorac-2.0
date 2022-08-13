@@ -3,19 +3,26 @@ import { Pie, Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
 const Data = {
-  labels: ["January", "February", "March", "April", "May"],
+  labels: ["Angel", "Seed", "Presale", "IDO", "Marketing", "Team"],
   datasets: [
     {
       label: "Rainfall",
-      backgroundColor: ["#B21F00", "#C9DE00", "#1499db", "#d14159", "#6800B4"],
-      hoverBackgroundColor: [
-        "#501800",
-        "#4B5000",
-        "#175000",
-        "#003350",
-        "#35014F",
+      backgroundColor: [
+        "#3399ff",
+        "#2d89e5",
+        "#287acc",
+        "#236bb2",
+        "#1e5b99",
+        "194c7f",
       ],
-      data: [5, 40, 100, 20, 80],
+      hoverBackgroundColor: [
+        "#6e0da6",
+        "#6e0da6",
+        "#6e0da6",
+        "#6e0da6",
+        "#6e0da6",
+      ],
+      data: [2.5, 5, 7.5, 14, 7.5, 0],
     },
   ],
 };
