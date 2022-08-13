@@ -5,11 +5,12 @@ import {
 } from "react-icons/md";
 
 import CarusolCard from "./CarusolCard";
-import AboutBG from "../assets/bg-2.png";
-import { Data } from "./Data";
+import { Data, ChartData } from "./Data";
 
 import { motion } from "framer-motion";
 import { PopUp } from "./animation";
+
+import BG3 from "../assets/bg/bg3.png";
 
 const Carusol = () => {
   const [item, setItem] = useState(1);
@@ -26,7 +27,7 @@ const Carusol = () => {
 
   return (
     <motion.div
-      style={{ backgroundImage: `url(${""})` }}
+      style={{ backgroundImage: `url(${BG3})` }}
       initial={"offscreen"}
       whileInView={"onscreen"}
       transition={{ staggerChildren: 0.2 }}
@@ -39,7 +40,7 @@ const Carusol = () => {
         </h2>
 
         <motion.div variants={PopUp}>
-          <CarusolCard data={Send} />
+          <CarusolCard data={Send} ChartData={ChartData} />
         </motion.div>
         <div className="text-white w-full text-center pt-4 md:pt-0">
           <button

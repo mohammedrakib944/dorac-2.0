@@ -12,7 +12,7 @@ import t8 from "../assets/team/8.png";
 import t9 from "../assets/team/9.png";
 import t10 from "../assets/team/10.png";
 import ad1 from "../assets/team/ad1.png";
-import ad2 from "../assets/team/ad2.jpeg";
+import ad2 from "../assets/team/ad2.png";
 
 import { FaTelegramPlane, FaDiscord } from "react-icons/fa";
 import { BsMedium, BsTwitter, BsFacebook, BsInstagram } from "react-icons/bs";
@@ -272,5 +272,38 @@ export const social = [
     id: 6,
     icon: <FaDiscord />,
     utl: "",
+  },
+];
+
+export const ChartData = [
+  {
+    id: 1,
+    year: 2016,
+    userGain: 80000,
+    userLost: 823,
+  },
+  {
+    id: 2,
+    year: 2017,
+    userGain: 40000,
+    userLost: 323,
+  },
+  {
+    id: 3,
+    year: 2018,
+    userGain: 3800,
+    userLost: 8293,
+  },
+  {
+    id: 4,
+    year: 2019,
+    userGain: 90000,
+    userLost: 123,
+  },
+  {
+    id: 5,
+    year: 2020,
+    userGain: 2100,
+    userLost: 803,
   },
 ];

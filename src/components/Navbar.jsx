@@ -6,6 +6,7 @@ import { BsPersonLinesFill } from "react-icons/bs";
 import logo from "../assets/logo.png";
 import { NavLinks } from "./Navlinks";
 import { NavLink, Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -43,11 +44,11 @@ const Navbar = () => {
         <div className="flex items-center justify-center">
           <ul className="hidden md:flex md:gap-x-3 lg:gap-x-6 mt-5">
             {NavLinks.map((data) => (
-              <NavLink to={data.url} key={data.id}>
+              <HashLink to={data.url} key={data.id}>
                 <li className="c-link ml-0 mb-6 w-fit text-gray-100 hover:border-b hover:text-cyan-500 duration-300">
                   {data.text}
                 </li>
-              </NavLink>
+              </HashLink>
             ))}
             <li className="c-link ml-0 mb-6 w-fit text-gray-100 hover:border-b hover:text-cyan-500 duration-300">
               <a
@@ -106,7 +107,7 @@ const Navbar = () => {
           <div className="h-[70%] py-4 flex flex-col justify-between">
             <ul>
               {NavLinks.map((data) => (
-                <NavLink to={data.url} key={data.id}>
+                <HashLink to={data.url} key={data.id}>
                   {data.text === "Marketplace" ? (
                     <button className="py-2 px-6 bg-violet-500 text-white rounded-lg hover:bg-violet-600 duration-300 -mt-2">
                       {data.text}
@@ -116,7 +117,7 @@ const Navbar = () => {
                       {data.text}
                     </li>
                   )}
-                </NavLink>
+                </HashLink>
               ))}
               <li>
                 <a href="#">

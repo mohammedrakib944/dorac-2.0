@@ -1,18 +1,19 @@
 import React from "react";
-import comming from "../assets/comming-soon.png";
-
 import { motion } from "framer-motion";
 import { Rotate } from "./animation";
 
 const Merch = () => {
   return (
     <motion.div
-      className="max-w-full flex items-center justify-center pt-20"
+      className="max-w-full flex items-center justify-center mt-20 mb-20"
       initial={"offscreen"}
       whileInView={"onscreen"}
       transition={{ staggerChildren: 0.2 }}
       viewport={{ once: false, amount: 0.5 }}
     >
+      <div>
+        <p>Nothing is impossible</p>
+      </div>
       <motion.div className="max-w-[700px]">
         <h2 className="title mt-[40px] w-full text-center mb-12">MERCH</h2>
         <motion.div variants={Rotate}>

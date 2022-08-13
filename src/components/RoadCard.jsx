@@ -4,8 +4,8 @@ import { BsFillCheckCircleFill } from "react-icons/bs";
 const RoadCard = ({ data }) => {
   const { text, id } = data;
   return (
-    <div className="flex items-center my-6 relative z-10">
-      <div className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] rounded-full bg-violet-500/40 flex items-center justify-center">
+    <div className="min-w-[320px] flex items-center my-6 relative z-10">
+      <div className="min-w-[45px] h-[45px] md:w-[50px] md:h-[50px] rounded-full bg-violet-500/40 flex items-center justify-center">
         <span className="w-[35px] h-[35px] bg-violet-600 rounded-full flex items-center justify-center font-bold">
           {id}
         </span>

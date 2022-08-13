@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import Doughnuts from "./Doughnuts";
 
-const CarusolCard = ({ data }) => {
+const CarusolCard = ({ data, ChartData }) => {
   const { image, title, para } = data;
   return (
     <div className="lg:p-12 lg:mx-32">
@@ -10,7 +11,8 @@ const CarusolCard = ({ data }) => {
           <p className="para max-w-[720px] mt-4 leading-7">{para}</p>
         </div>
         <div className="md:col-span-3">
-          <img src={image} alt="" />
+          {/* <img src={image} alt="" /> */}
+          <Doughnuts />
         </div>
       </div>
     </div>

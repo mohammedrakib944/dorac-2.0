@@ -7,10 +7,12 @@ import { RoadMap } from "./Data";
 import { motion } from "framer-motion";
 import { PopUp } from "./animation";
 
+import BG4 from "../assets/bg/bg4.png";
+
 const Roadmap = () => {
   return (
     <motion.div
-      style={{ backgroundImage: `url(${""})` }}
+      style={{ backgroundImage: `url(${BG4})` }}
       initial={"offscreen"}
       whileInView={"onscreen"}
       transition={{ staggerChildren: 0.2 }}
@@ -34,7 +36,7 @@ const Roadmap = () => {
             />
           </motion.div>
           {/* xl:max-h-[600px] overflow-y-auto my-4 scrollbar-hide */}
-          <motion.div className="xl:h-[550px] xl:snap-y xl:snap-mandatory overflow-y-auto scrollbar-hide text-gray-100 relative  col-span-4 md:pl-4">
+          <motion.div className="h-[400px] flex gap-10 xl:block xl:h-[550px] xl:snap-y xl:snap-mandatory overflow-x-auto xl:overflow-y-auto scrollbar-hide text-gray-100 relative  col-span-4 md:pl-4">
             {RoadMap.map((data, index) => (
               <div
                 className="xl:h-full xl:snap-center flex items-center"
