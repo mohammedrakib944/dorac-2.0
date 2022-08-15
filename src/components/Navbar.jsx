@@ -106,17 +106,19 @@ const Navbar = () => {
             <ul>
               {NavLinks.map((data) => (
                 <HashLink to={data.url} key={data.id}>
-                  {data.text === "Marketplace" ? (
-                    <button className="py-2 px-6 bg-violet-500 text-white rounded-lg hover:bg-violet-600 duration-300 -mt-2">
-                      {data.text}
-                    </button>
-                  ) : (
-                    <li className="c-link ml-0 mb-6 w-fit text-gray-100">
-                      {data.text}
-                    </li>
-                  )}
+                  <li className="c-link ml-0 mb-6 w-fit text-gray-100 hover:border-b hover:text-cyan-500 duration-300">
+                    {data.text}
+                  </li>
                 </HashLink>
               ))}
+              <li className="c-link ml-0 mb-6 w-fit text-gray-100 hover:border-b hover:text-cyan-500 duration-300">
+                <a
+                  href="https://dorac.app/whitepaper/626c73845d4eb45942f0e7dd"
+                  target="_blank"
+                >
+                  Whitepaper
+                </a>
+              </li>
               <li>
                 <a href="#">
                   <button className="py-2 px-6 bg-violet-600 text-white rounded-lg hover:bg-violet-700 duration-300 -mt-2">
