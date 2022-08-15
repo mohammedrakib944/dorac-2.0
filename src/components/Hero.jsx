@@ -60,7 +60,12 @@ const Hero = () => {
             className="py-3 w-[350px] font-bold h-[70px] px-6 bg-contain bg-no-repeat bg-center text-white"
             style={{ backgroundImage: `url(${ButtonBG})` }}
           >
-            <span className="text-red-500">PLAY NOW</span> ALPHA TEST
+            <a
+              href="https://drive.google.com/drive/folders/1_0QSwc2Gl4VfefI1zvUBfyhhZhMXcWYX"
+              target="_blank"
+            >
+              <span className="text-red-500">PLAY NOW</span> ALPHA TEST
+            </a>
           </motion.button>
         </motion.div>
       </motion.div>

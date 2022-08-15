@@ -14,7 +14,11 @@ const Merch = () => {
       <motion.div className="max-w-[700px]">
         <h2 className="title mt-[40px] w-full text-center mb-12">MERCH</h2>
         <motion.div variants={Rotate}>
-          <a href="#" className="bg-violet-500 py-3 px-6 rounded-md text-white">
+          <a
+            href="https://dogeraceofficial.myshopify.com/"
+            target="_blank"
+            className="bg-violet-500 py-3 px-6 rounded-md text-white"
+          >
             Shopify Marchent
           </a>
         </motion.div>
