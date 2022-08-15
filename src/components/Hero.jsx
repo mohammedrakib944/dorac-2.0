@@ -57,10 +57,10 @@ const Hero = () => {
 
           <motion.button
             variants={PopUp}
-            className="py-3 w-[300px] font-bold h-[60px] px-6 bg-contain bg-no-repeat bg-center text-white"
+            className="py-3 w-[350px] font-bold h-[70px] px-6 bg-contain bg-no-repeat bg-center text-white"
             style={{ backgroundImage: `url(${ButtonBG})` }}
           >
-            Play Now
+            <span className="text-red-500">PLAY NOW</span> ALPHA TEST
           </motion.button>
         </motion.div>
       </motion.div>

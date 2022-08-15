@@ -4,6 +4,7 @@ import { Chart as ChartJS, ArcElement, Tooltip } from "chart.js";
 
 const Data = {
   labels: [
+    "Initial Marketing",
     "Advisors",
     "Initial LP",
     "Prizes",
@@ -42,6 +43,28 @@ const Data = {
       data: [1.0, 2.7, 6.0, 10.0, 10.4, 20.0, 16.6, 8.3, 8.3, 16.7],
     },
   ],
+  options: {
+    plugins: {
+      tooltip: {
+        callbacks: {
+          label: function (context) {
+            let label = context.dataset.label || "";
+
+            if (label) {
+              label += ": ";
+            }
+            if (context.parsed.y !== null) {
+              label += new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD",
+              }).format(context.parsed.y);
+            }
+            return label;
+          },
+        },
+      },
+    },
+  },
 };
 
 ChartJS.register(ArcElement, Tooltip);
