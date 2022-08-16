@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-// import {
-//   MdOutlineKeyboardArrowRight,
-//   MdOutlineKeyboardArrowLeft,
-// } from "react-icons/md";
+import {
+  MdOutlineKeyboardArrowRight,
+  MdOutlineKeyboardArrowLeft,
+} from "react-icons/md";
 
 import CarusolCard from "./CarusolCard";
-import { Data, ChartData } from "./Data";
+import { Data } from "./Data";
 
 import { motion } from "framer-motion";
 import { PopUp } from "./animation";
@@ -40,9 +40,9 @@ const Carusol = () => {
         </h2>
 
         <motion.div variants={PopUp}>
-          <CarusolCard data={Send} ChartData={ChartData} />
+          <CarusolCard data={Send} />
         </motion.div>
-        {/* <div className="text-white w-full text-center pt-4 md:pt-0">
+        <div className="text-white w-full text-center pt-4 md:pt-0">
           <button
             disabled={item === 1}
             className="p-2 bg-violet-600 rounded-full text-xl mr-2 ml-2 hover:bg-violet-700 disabled:opacity-50"
@@ -57,7 +57,7 @@ const Carusol = () => {
           >
             <MdOutlineKeyboardArrowRight />
           </button>
-        </div> */}
+        </div>
       </div>
     </motion.div>
   );

@@ -24,6 +24,12 @@ export const Data = [
     title: "Our Native Token $DORC",
     para: "Our Native Token DORC is DEFLATIONARY and built on Binance Smart Chain, you can use it to participate in races, training and feeding your dogs, or use it for any other amazing services we have planned for your dogs. You can read more about tokenomics in our whitepaper",
   },
+  {
+    id: 2,
+    image: "",
+    title: "Utility Token $DRT",
+    para: "This token will serve as free race or daily $DRT race reward and will be mostly used in combination with $DORC token to cover breeding fees, and will also be used to partly pay for other services and consumables in the DoRac metaverse.",
+  },
 ];
 
 export const RoadMap = [
@@ -268,38 +274,5 @@ export const social = [
     id: 6,
     icon: <FaDiscord />,
     url: "https://discord.gg/vswdzWUVm8",
-  },
-];
-
-export const ChartData = [
-  {
-    id: 1,
-    year: 2016,
-    userGain: 80000,
-    userLost: 823,
-  },
-  {
-    id: 2,
-    year: 2017,
-    userGain: 40000,
-    userLost: 323,
-  },
-  {
-    id: 3,
-    year: 2018,
-    userGain: 3800,
-    userLost: 8293,
-  },
-  {
-    id: 4,
-    year: 2019,
-    userGain: 90000,
-    userLost: 123,
-  },
-  {
-    id: 5,
-    year: 2020,
-    userGain: 2100,
-    userLost: 803,
   },
 ];
