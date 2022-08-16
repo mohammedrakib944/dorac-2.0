@@ -37,46 +37,102 @@ const Partners = () => {
         id="partners"
       >
         <Slider {...settings}>
-          <a href="#" className="!flex items-center justify-center">
+          <a
+            href="https://twitter.com/axbesportsguild"
+            target="_blank"
+            className="!flex justify-center"
+          >
             <img src={P1} className="w-[60px] " alt="" />
           </a>
-          <a href="#" className="!flex justify-center">
+          <a
+            href="https://twitter.com/whitelist_group"
+            target="_blank"
+            className="!flex justify-center"
+          >
             <img src={P2} className="w-[60px] " alt="" />
           </a>
-          <a href="#" className="!flex justify-center">
+          <a
+            href="https://atlanteanvc.com"
+            target="_blank"
+            className="!flex justify-center"
+          >
             <img src={P3} className="w-[60px] " alt="" />
           </a>
-          <a href="#" className="!flex justify-center">
+          <a
+            href="https://liquidifty.io"
+            target="_blank"
+            className="!flex justify-center"
+          >
             <img src={P4} className="w-[60px] " alt="" />
           </a>
-          <a href="#" className="!flex justify-center">
+          <a
+            href="https://twitter.com/vendilgaming?lang=en"
+            className="!flex justify-center"
+            target="_blank"
+          >
             <img src={P5} className="w-[60px] " alt="" />
           </a>
-          <a href="#" className="!flex justify-center">
+          <a
+            href="https://www.goinfluencer.io"
+            className="!flex justify-center"
+            target="_blank"
+          >
             <img src={P6} className="w-[60px] " alt="" />
           </a>
-          <a href="#" className="!flex justify-center">
+          <a
+            href="https://twitter.com/MTTGamingGuild"
+            className="!flex justify-center"
+            target="_blank"
+          >
             <img src={P7} className="w-[60px] " alt="" />
           </a>
-          <a href="#" className="!flex justify-center">
+          <a
+            href="https://twitter.com/breed_fi"
+            className="!flex justify-center"
+            target="_blank"
+          >
             <img src={P8} className="w-[60px] " alt="" />
           </a>
-          <a href="#" className="!flex justify-center">
+          <a
+            href="https://twitter.com/AsgardMetaguild"
+            className="!flex justify-center"
+            target="_blank"
+          >
             <img src={P9} className="w-[60px] " alt="" />
           </a>
-          <a href="#" className="!flex justify-center">
+          <a
+            href="https://www.facebook.com/CabronMetaGames"
+            className="!flex justify-center"
+            target="_blank"
+          >
             <img src={P10} className="w-[60px] " alt="" />
           </a>
-          <a href="#" className="!flex justify-center">
+          <a
+            href="https://www.dorac.app/"
+            className="!flex justify-center"
+            target="_blank"
+          >
             <img src={P11} className="w-[60px] " alt="" />
           </a>
-          <a href="#" className="!flex justify-center">
+          <a
+            href="https://twitter.com/hot_capital"
+            className="!flex justify-center"
+            target="_blank"
+          >
             <img src={P12} className="w-[60px] " alt="" />
           </a>
-          <a href="#" className="!flex justify-center">
+          <a
+            href="https://www.insertstonks.io"
+            className="!flex justify-center"
+            target="_blank"
+          >
             <img src={P13} className="w-[60px] " alt="" />
           </a>
-          <a href="#" className="!flex justify-center">
+          <a
+            href="https://gotbit.io/"
+            className="!flex justify-center"
+            target="_blank"
+          >
             <img src={P14} className="w-[60px] " alt="" />
           </a>
         </Slider>

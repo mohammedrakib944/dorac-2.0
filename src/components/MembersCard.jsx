@@ -6,7 +6,7 @@ const MembersCard = ({ data }) => {
   const { dp, name, title } = data;
   return (
     <div className="rounded-lg rounded-br-[30px] overflow-hidden min-w-[300px] mx-4 bg-violet-500/20 hover:bg-violet-800 duration-300">
-      <img src={dp} className="w-[200px] rounded-lg mx-auto mt-4" alt="" />
+      <img src={dp} className="w-[200px] rounded-full mx-auto mt-4" alt="" />
       <div className="text-gray-100 text-center ">
         <h3 className="mt-4 text-teal-500">{name}</h3>
         <p className="py-2">{title}</p>

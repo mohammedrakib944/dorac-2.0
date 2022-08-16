@@ -35,7 +35,7 @@ const Collections = () => {
             </h2>
             <p className="text-gray-300 para">
               Explore our first five project collections. Get your dog, player
-              ID, usable, mintpas,s, or mystery box. Each of these collections
+              ID, usable, mintpas, or mystery box. Each of these collections
               plays a role in our game, so be sure to get one if you want to
               take full advantage of the offered services. More collections will
               be added over time together with game growth and project

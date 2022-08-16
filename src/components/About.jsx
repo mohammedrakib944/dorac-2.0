@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div style={{ backgroundImage: `url(${BG1})` }}>
       <motion.div
-        className="wrapper mt-6 lg:mt-0 overflow-hidden"
+        className="wrapper mt-6 lg:mt-0 overflow-hidden xl:pb-[200px]"
         initial={"offscreen"}
         whileInView={"onscreen"}
         transition={{ staggerChildren: 0.2 }}
@@ -30,7 +30,7 @@ const About = () => {
               />
               <br />
               <img
-                className="w-[80%] border-2 border-gray-100/50 xl:absolute rounded-xl mt-[-50px] ml-[100px] xl:ml-0 xl:mt-12 xl:left-40"
+                className="w-[80%] border-2 border-gray-100/50 xl:absolute rounded-xl mt-[-50px] ml-[100px] xl:ml-0 xl:mt-36 xl:left-40"
                 src={Video2}
                 alt=""
               />
@@ -42,7 +42,7 @@ const About = () => {
           >
             <h2 className="title text-center md:text-left">About the game</h2>
             <p className="para max-w-[720px] mt-4 leading-7">
-              DoRac is a metaverse space crypto play-to-earn game that will
+              DoRac is a metaverse space crypto play and earn game that will
               offer a few ways on how you as a player or just a visitor can
               participate in the metaverse. Starting with raising your own dogs,
               breeding, and training them to perform better in competitions and
