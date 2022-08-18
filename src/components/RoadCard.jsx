@@ -23,16 +23,11 @@ const RoadCard = ({ data }) => {
             >
               <span className="text-violet-500 pr-4">
                 <BsFillCheckCircleFill />
-              </span>{" "}
-              {val.status ? (
-                <span>
-                  {" "}
-                  {val.title} -{" "}
-                  <span className="text-teal-500">{val?.status}</span>
-                </span>
-              ) : (
-                <span className="text-teal-500"> {val.title}</span>
-              )}
+              </span>
+              <span>
+                {val.title} {val.status && " - "}
+                <span className="text-teal-500">{val?.status}</span>
+              </span>
             </li>
           ))}
         </ul>

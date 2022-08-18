@@ -74,8 +74,7 @@ const Learn = () => {
                   <p className="simple-para">
                     ID will be held on the player’s personal metamask or any
                     other wallet that will be able to connect to our platform.
-                    These IDs will be able to be traded on NFT markets on BSC
-                    chain or later in our own marketplace.
+                    You will be able to trade them in pur own marketplace.
                   </p>
                 </div>
               </div>
@@ -135,11 +134,11 @@ const Learn = () => {
 
             <div className="text-gray-300 leading-8 flex flex-col justify-center -mt-16">
               <h2 className="title2 mt-5 margin-left mb-4">
-                RoRac <span className="text-cyan-500">Racing Doge's</span>
+                DoRac <span className="text-cyan-500">Racing Dogs</span>
               </h2>
               <p className="simple-para2">
                 Initially, the majority of our ecosystem will focus on racing
-                dogs in the form of nfts. Doges will be acquired through our
+                dogs in the form of nfts. Dogs will be acquired through our
                 pre-sale and main-sale events before launching our platform. You
                 will be able to get your hands on them via giveaways and special
                 promotional events so be sure to join our socials to get info on

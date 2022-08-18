@@ -5,7 +5,7 @@ import { BsPersonLinesFill } from "react-icons/bs";
 
 import logo from "../assets/logo.png";
 import { NavLinks } from "./Navlinks";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import Social from "./Social";
 

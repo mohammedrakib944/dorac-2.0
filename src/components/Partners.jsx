@@ -108,7 +108,7 @@ const Partners = () => {
             <img src={P10} className="w-[60px] " alt="" />
           </a>
           <a
-            href="https://www.dorac.app/"
+            href="https://govventures.net/"
             className="!flex justify-center"
             target="_blank"
           >
