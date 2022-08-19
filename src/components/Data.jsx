@@ -4,7 +4,7 @@ import redDog from "../assets/red-dog.png";
 import t1 from "../assets/team/1.png";
 import t2 from "../assets/team/2.png";
 import t3 from "../assets/team/3.png";
-import t4 from "../assets/team/4.png";
+import t4 from "../assets/team/4.jpeg";
 import t5 from "../assets/team/5.png";
 import t6 from "../assets/team/6.png";
 import t7 from "../assets/team/7.png";
@@ -174,9 +174,7 @@ export const Members = [
   },
   {
     id: 4,
-    // dp: t4,
-    dp: "",
-    // name: "AGNESE POGAINE",
+    dp: t4,
     name: "Vincenzo Sapere",
     title: "CMO",
     linkdin: "",

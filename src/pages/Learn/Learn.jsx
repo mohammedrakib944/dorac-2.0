@@ -316,7 +316,15 @@ const Learn = () => {
                     >
                       click here
                     </a>{" "}
-                    on how to set it up to use it on Binance Smart Chain (BSC).
+                    on how to set it up to use it on Binance Smart Chain{" "}
+                    <a
+                      className="text-blue-500 hover:text-blue-600"
+                      href="https://bscscan.com/token/0xa5d897a847eeb6f8c82273c3c4e5e6915eeb0c75"
+                      target="_blank"
+                    >
+                      (BSC)
+                    </a>
+                    .
                   </p>
                 </div>
               </div>
