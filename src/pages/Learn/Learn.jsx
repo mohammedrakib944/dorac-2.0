@@ -170,8 +170,8 @@ const Learn = () => {
               <p className="my-4">
                 <span className="font-bold text-gray-100">Luck </span> – will be
                 the most important, this will be the only trait you cannot
-                improve, it will be inherited from doges parents. This stat will
-                boost your doges chance of successful training , wining
+                improve, it will be inherited from dogs parents. This stat will
+                boost your dogs chance of successful training , wining
                 tournaments , and not getting injured during tournaments and
                 competitions.
               </p>
@@ -191,7 +191,7 @@ const Learn = () => {
                 <p className="text-gray-300">
                   Facilities will be structures that players will interact with.
                   At first there will be 3 facilities which will be meant
-                  specific for doges, these are Training grounds, Breeding
+                  specific for dogs, these are Training grounds, Breeding
                   Houses, and Health Centers. Addition to these buildings there
                   will be Marketplace building , Utility Shops, Betting office,
                   and Arenas. Some other buildings will be added later down the
@@ -200,7 +200,7 @@ const Learn = () => {
                   buildings, if there is free slots in them. Public buildings
                   however will ask a service cost from player for each action
                   they provide. Private ones will provide owners a way to breed,
-                  train or heal their doges whenever they want, and with no
+                  train or heal their dogs whenever they want, and with no
                   action price. However there will be a some sort of property
                   tax that will need to be payed in order to use a building.
                 </p>
@@ -234,9 +234,9 @@ const Learn = () => {
           <p className="my-4">
             <span className="font-bold text-white"> Utility Shops</span> –
             places where to buy consumables and stimulants. Consumables can be
-            used to increase doges training success rate for a set period of
-            time. Stimulants will be items used to boost doges performance
-            during race. Which will be illegal action if caught doing so.
+            used to increase dogs training success rate for a set period of
+            time. Stimulants will be items used to boost dogs performance during
+            race. Which will be illegal action if caught doing so.
           </p>
           <p className="my-4">
             <span className="font-bold text-white"> Arenas</span> – places where

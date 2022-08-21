@@ -21,13 +21,13 @@ export const Data = [
   {
     id: 1,
     image: dorac,
-    title: "Our Native Token $DORC",
+    title: "$DORC Governance Deflationary",
     para: "Our Native Token DORC is DEFLATIONARY and built on Binance Smart Chain, you can use it to participate in races, training and feeding your dogs, or use it for any other amazing services we have planned for your dogs. You can read more about tokenomics in our whitepaper",
   },
   {
     id: 2,
     image: "",
-    title: "Utility Token $DRT",
+    title: "$DRT Rewards inflationary",
     para: "This token will serve as free race or daily $DRT race reward and will be mostly used in combination with $DORC token to cover breeding fees, and will also be used to partly pay for other services and consumables in the DoRac metaverse.",
   },
 ];
